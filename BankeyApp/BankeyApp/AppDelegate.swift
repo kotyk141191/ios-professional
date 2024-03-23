@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow (frame: UIScreen.main.bounds)
         window? .makeKeyAndVisible()
-        window? .backgroundColor = .lightGray
+        window? .backgroundColor = .systemBackground
         //        window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingContainerViewController()
+        window?.rootViewController = OnboardingViewController()
+
 
         return true
     }
