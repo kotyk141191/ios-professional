@@ -69,12 +69,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate : LoginViewControllerDelegate {
     func didLogin() {
-        displayNextScreen()    }
+        displayNextScreen()  
+    }
 }
 
 //MARK: - OnboardingContainerViewControllerDelegate
 extension AppDelegate : OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
+        LocalState.hasOnboarded = true
         prepMainView()
         setRootViewController(mainViewController)
     }

@@ -109,25 +109,26 @@ extension LoginViewController {
         view.addSubview(appNameLabel)
         view.addSubview(descriptionLabel)
         
+        
+        //Description label
+        NSLayoutConstraint.activate([
+            loginView.topAnchor.constraint(equalToSystemSpacingBelow: descriptionLabel.bottomAnchor, multiplier: 2),
+            descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        
+         subtitleLeadingAnchor = descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
+         subtitleLeadingAnchor?.isActive = true
         //AppName label
         NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalToSystemSpacingBelow: appNameLabel.bottomAnchor, multiplier: 3),
-            appNameLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            appNameLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+            appNameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
         
         titleLeadingAnchor = appNameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
         titleLeadingAnchor?.isActive = true
         
-        //Description label
-        NSLayoutConstraint.activate([
-            loginView.topAnchor.constraint(equalToSystemSpacingBelow: descriptionLabel.bottomAnchor, multiplier: 2),
-            descriptionLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
-        ])
-        
-        subtitleLeadingAnchor = descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
-        subtitleLeadingAnchor?.isActive = true
+       
         
         //LoginView
         NSLayoutConstraint.activate([
@@ -168,12 +169,12 @@ extension LoginViewController  {
             return
         }
         
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank")
-            return
-        }
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank")
+//            return
+//        }
         
-        if username == "Mikl" && password == "welcome" {
+        if username == "" && password == "" {
             signInButton.configuration?.showsActivityIndicator = true
             delegate?.didLogin()
         } else {
