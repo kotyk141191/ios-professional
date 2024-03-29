@@ -40,6 +40,13 @@ class LoginViewController: UIViewController {
         return loginView.passwordTextField.text
     }
     
+    //animation
+    var leadingEdgeOnScreen: CGFloat = 16
+    var leadingEdgeOffScreen: CGFloat = -1000
+    
+    var titleLeadingAnchor: NSLayoutConstraint?
+    var subtitleLeadingAnchor: NSLayoutConstraint?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -53,6 +60,10 @@ class LoginViewController: UIViewController {
         signInButton.configuration?.showsActivityIndicator = false
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animate()
+    }
 }
 
 extension LoginViewController {
@@ -78,6 +89,7 @@ extension LoginViewController {
         appNameLabel.text = "Bankey"
         appNameLabel.numberOfLines = 0
         appNameLabel.isHidden = false
+        appNameLabel.alpha = 0
         
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.textAlignment = .center
@@ -86,6 +98,7 @@ extension LoginViewController {
         descriptionLabel.text = "Your premium source for all things banking"
         descriptionLabel.numberOfLines = 0
         descriptionLabel.isHidden = false
+        descriptionLabel.alpha = 0
     }
     
     private func layout() {
@@ -95,6 +108,26 @@ extension LoginViewController {
         
         view.addSubview(appNameLabel)
         view.addSubview(descriptionLabel)
+        
+        //AppName label
+        NSLayoutConstraint.activate([
+            descriptionLabel.topAnchor.constraint(equalToSystemSpacingBelow: appNameLabel.bottomAnchor, multiplier: 3),
+            appNameLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            appNameLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+        ])
+        
+        titleLeadingAnchor = appNameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
+        titleLeadingAnchor?.isActive = true
+        
+        //Description label
+        NSLayoutConstraint.activate([
+            loginView.topAnchor.constraint(equalToSystemSpacingBelow: descriptionLabel.bottomAnchor, multiplier: 2),
+            descriptionLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+        ])
+        
+        subtitleLeadingAnchor = descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
+        subtitleLeadingAnchor?.isActive = true
         
         //LoginView
         NSLayoutConstraint.activate([
@@ -116,19 +149,7 @@ extension LoginViewController {
             errorMessageLabel.trailingAnchor.constraint(equalTo: signInButton.trailingAnchor)
         ])
         
-        //Description label
-        NSLayoutConstraint.activate([
-            loginView.topAnchor.constraint(equalToSystemSpacingBelow: descriptionLabel.bottomAnchor, multiplier: 2),
-            descriptionLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
-        ])
-        //AppName label
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalToSystemSpacingBelow: appNameLabel.bottomAnchor, multiplier: 3),
-            appNameLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            appNameLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
-        ])
-        
+      
      
     }
 }
@@ -163,5 +184,38 @@ extension LoginViewController  {
     private func configureView(withMessage message : String ){
         errorMessageLabel.isHidden = false
         errorMessageLabel.text = message
+    }
+}
+
+//MARK: - Animations
+
+extension LoginViewController {
+    private func animate() {
+        
+        let duration = 2.0
+        
+        let animator1 = UIViewPropertyAnimator(duration: duration, curve: .easeInOut) {
+            self.titleLeadingAnchor?.constant = self.leadingEdgeOnScreen
+            self.view.layoutIfNeeded()
+        }
+        animator1.startAnimation()
+        
+        let animator2 = UIViewPropertyAnimator(duration: duration, curve: .easeInOut) {
+            self.subtitleLeadingAnchor?.constant = self.leadingEdgeOnScreen
+            self.view.layoutIfNeeded()
+        }
+        animator2.startAnimation(afterDelay: 1)
+        
+        let animator3 = UIViewPropertyAnimator(duration: duration*2, curve: .easeInOut) {
+            self.appNameLabel.alpha = 1
+            self.view.layoutIfNeeded()
+        }
+        animator3.startAnimation(afterDelay: 1)
+        
+        let animator4 = UIViewPropertyAnimator(duration: duration*2, curve: .easeInOut) {
+            self.descriptionLabel.alpha = 1
+            self.view.layoutIfNeeded()
+        }
+        animator4.startAnimation(afterDelay: 1)
     }
 }
