@@ -91,6 +91,7 @@ extension AccountSummaryViewController {
     private func setupSkeletons() {
         let row = Account.makeSkeleton()
         accounts = Array(repeating: row, count: 10)
+        tableView.reloadData()
     }
 }
 
