@@ -91,7 +91,7 @@ extension AccountSummaryViewController {
     private func setupSkeletons() {
         let row = Account.makeSkeleton()
         accounts = Array(repeating: row, count: 10)
-        tableView.reloadData()
+        configureTableCells(with: accounts)
     }
 }
 
@@ -137,8 +137,11 @@ extension AccountSummaryViewController {
             switch result {
             case .success(let profile):
                 self.profile = profile
+                self.configureTableHeaderView(with: profile)
+
             case .failure(let error):
                 print(error.localizedDescription)
+                self.displayError(error: error)
             }
             group.leave()
         }
@@ -148,8 +151,10 @@ extension AccountSummaryViewController {
             switch result {
             case .success(let accounts) :
                 self.accounts = accounts
+                self.configureTableCells(with: self.accounts)
             case .failure(let error):
                 print(error.localizedDescription)
+                self.displayError(error: error)
             }
             group.leave()
             
@@ -179,6 +184,29 @@ extension AccountSummaryViewController {
         accountsCellViewModels = accounts.map({
             AccountSummaryCell.ViewModel(accountType: $0.type, accountName: $0.name, balance: $0.amount)
         })
+    }
+    
+    private func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+
+        }
+    }
+    
+    private func displayError(error: NetworkError) {
+        
+        print(error.localizedDescription)
+        switch error {
+        case .decodingError :
+            self.showErrorAlert(title: "Decoding error", message: "We could not process you request. Please try again")
+        case .serverError :
+            self.showErrorAlert(title: "Server Error", message: "Enshure you are connected to the internet. Please try again")
+        }
     }
 }
 
