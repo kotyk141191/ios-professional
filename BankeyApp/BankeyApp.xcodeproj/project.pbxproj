@@ -31,6 +31,8 @@
 		A15BD6082BAF0C37001799B0 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD6072BAF0C37001799B0 /* LocalState.swift */; };
 		A1879B602BB0A481001C62E6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1879B5F2BB0A481001C62E6 /* UIViewController+Utils.swift */; };
 		A1879B622BB0A5AE001C62E6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1879B612BB0A5AE001C62E6 /* MainViewController.swift */; };
+		A1D667A02BBAE51400C60AF7 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6679F2BBAE51400C60AF7 /* ProfileManager.swift */; };
+		A1D667A22BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D667A12BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift */; };
 		A1ECEAD02BB6C078001C8CB2 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECEACF2BB6C078001C8CB2 /* NSNotificationName.swift */; };
 		A1ECEAD22BB6C226001C8CB2 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECEAD12BB6C226001C8CB2 /* UITextField+SecureToggle.swift */; };
 		A1ECEAD52BB6D762001C8CB2 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECEAD42BB6D762001C8CB2 /* ShakeyBellView.swift */; };
@@ -74,6 +76,8 @@
 		A15BD6072BAF0C37001799B0 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		A1879B5F2BB0A481001C62E6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		A1879B612BB0A5AE001C62E6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1D6679F2BBAE51400C60AF7 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		A1D667A12BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		A1ECEACF2BB6C078001C8CB2 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		A1ECEAD12BB6C226001C8CB2 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		A1ECEAD42BB6D762001C8CB2 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 		A12FF86E2BB2DED20071A118 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				A1D6679E2BBAE50300C60AF7 /* Networking */,
 				A12FF86F2BB2E00E0071A118 /* AccountSummaryViewController.swift */,
 				A1486AB72BB95F1C00AA3352 /* AccountSummaryViewController+Networking.swift */,
 				A12FF8752BB2F2BA0071A118 /* Header */,
@@ -202,6 +207,7 @@
 			children = (
 				A1486ABB2BB9678700AA3352 /* ProfileTests.swift */,
 				A1486ABD2BB9680A00AA3352 /* AccountTests.swift */,
+				A1D667A12BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -227,6 +233,14 @@
 				A1ECEACF2BB6C078001C8CB2 /* NSNotificationName.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A1D6679E2BBAE50300C60AF7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A1D6679F2BBAE51400C60AF7 /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		A1ECEAD32BB6D742001C8CB2 /* Components */ = {
@@ -342,6 +356,7 @@
 				A1879B602BB0A481001C62E6 /* UIViewController+Utils.swift in Sources */,
 				A1486AC22BB9EB5800AA3352 /* SkeletonCell.swift in Sources */,
 				A1486AB62BB95D7100AA3352 /* Date+Utils.swift in Sources */,
+				A1D667A02BBAE51400C60AF7 /* ProfileManager.swift in Sources */,
 				A11773AC2BAD75A700A27F35 /* LoginView.swift in Sources */,
 				A15BD6082BAF0C37001799B0 /* LocalState.swift in Sources */,
 				A12FF8722BB2E3320071A118 /* AccountSummaryHeaderView.swift in Sources */,
@@ -370,6 +385,7 @@
 				A12FF88D2BB31BE40071A118 /* CurrencyFormatterTest.swift in Sources */,
 				A1486ABE2BB9680A00AA3352 /* AccountTests.swift in Sources */,
 				A1486ABC2BB9678700AA3352 /* ProfileTests.swift in Sources */,
+				A1D667A22BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
