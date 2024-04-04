@@ -24,13 +24,13 @@
 		A1486ABC2BB9678700AA3352 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1486ABB2BB9678700AA3352 /* ProfileTests.swift */; };
 		A1486ABE2BB9680A00AA3352 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1486ABD2BB9680A00AA3352 /* AccountTests.swift */; };
 		A1486AC02BB9EAA400AA3352 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1486ABF2BB9EAA400AA3352 /* SkeletonLoadable.swift */; };
-		A1486AC22BB9EB5800AA3352 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1486AC12BB9EB5800AA3352 /* SkeletonCell.swift */; };
 		A15BD6012BAED234001799B0 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD6002BAED233001799B0 /* OnboardingContainerViewController.swift */; };
 		A15BD6032BAED7DE001799B0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD6022BAED7DE001799B0 /* OnboardingViewController.swift */; };
 		A15BD6052BAF05C7001799B0 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD6042BAF05C7001799B0 /* DummyViewController.swift */; };
 		A15BD6082BAF0C37001799B0 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD6072BAF0C37001799B0 /* LocalState.swift */; };
 		A1879B602BB0A481001C62E6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1879B5F2BB0A481001C62E6 /* UIViewController+Utils.swift */; };
 		A1879B622BB0A5AE001C62E6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1879B612BB0A5AE001C62E6 /* MainViewController.swift */; };
+		A1C27A912BBBDE3000496141 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C27A8E2BBBDE3000496141 /* SkeletonCell.swift */; };
 		A1D667A02BBAE51400C60AF7 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6679F2BBAE51400C60AF7 /* ProfileManager.swift */; };
 		A1D667A22BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D667A12BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift */; };
 		A1ECEAD02BB6C078001C8CB2 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECEACF2BB6C078001C8CB2 /* NSNotificationName.swift */; };
@@ -69,13 +69,13 @@
 		A1486ABB2BB9678700AA3352 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		A1486ABD2BB9680A00AA3352 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		A1486ABF2BB9EAA400AA3352 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
-		A1486AC12BB9EB5800AA3352 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		A15BD6002BAED233001799B0 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		A15BD6022BAED7DE001799B0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A15BD6042BAF05C7001799B0 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		A15BD6072BAF0C37001799B0 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		A1879B5F2BB0A481001C62E6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		A1879B612BB0A5AE001C62E6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1C27A8E2BBBDE3000496141 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		A1D6679F2BBAE51400C60AF7 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		A1D667A12BBAE71300C60AF7 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		A1ECEACF2BB6C078001C8CB2 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 			children = (
 				A12FF8792BB2F3040071A118 /* AccountSummaryCell.swift */,
 				A1486ABF2BB9EAA400AA3352 /* SkeletonLoadable.swift */,
-				A1486AC12BB9EB5800AA3352 /* SkeletonCell.swift */,
+				A1C27A8E2BBBDE3000496141 /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -354,7 +354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1879B602BB0A481001C62E6 /* UIViewController+Utils.swift in Sources */,
-				A1486AC22BB9EB5800AA3352 /* SkeletonCell.swift in Sources */,
 				A1486AB62BB95D7100AA3352 /* Date+Utils.swift in Sources */,
 				A1D667A02BBAE51400C60AF7 /* ProfileManager.swift in Sources */,
 				A11773AC2BAD75A700A27F35 /* LoginView.swift in Sources */,
@@ -370,6 +369,7 @@
 				A1ECEAD52BB6D762001C8CB2 /* ShakeyBellView.swift in Sources */,
 				A12FF87A2BB2F3040071A118 /* AccountSummaryCell.swift in Sources */,
 				A15BD6032BAED7DE001799B0 /* OnboardingViewController.swift in Sources */,
+				A1C27A912BBBDE3000496141 /* SkeletonCell.swift in Sources */,
 				A1879B622BB0A5AE001C62E6 /* MainViewController.swift in Sources */,
 				A12FF8702BB2E00E0071A118 /* AccountSummaryViewController.swift in Sources */,
 				A11773962BAD6F7F00A27F35 /* AppDelegate.swift in Sources */,

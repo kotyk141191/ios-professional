@@ -1,10 +1,3 @@
-//
-//  SkeletonCell.swift
-//  BankeyApp
-//
-//  Created by Mykhailo Kotyk on 31.03.2024.
-//
-
 import UIKit
 
 extension SkeletonCell: SkeletonLoadable {}
