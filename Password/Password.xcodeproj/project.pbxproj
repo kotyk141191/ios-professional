@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A14A4DF52BC2C9A200E13662 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */; };
+		A14A4DF92BC2D40900E13662 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */; };
 		A18100B12BC1B68A0043DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18100B02BC1B68A0043DE07 /* AppDelegate.swift */; };
 		A18100B52BC1B68A0043DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18100B42BC1B68A0043DE07 /* ViewController.swift */; };
 		A18100BA2BC1B68B0043DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18100B92BC1B68B0043DE07 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
+		A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
 		A18100AD2BC1B68A0043DE07 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18100B02BC1B68A0043DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A18100B42BC1B68A0043DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */,
+				A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */,
 			);
 			name = PasswordStatusView;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				A18100B52BC1B68A0043DE07 /* ViewController.swift in Sources */,
 				A18100B12BC1B68A0043DE07 /* AppDelegate.swift in Sources */,
 				A14A4DF52BC2C9A200E13662 /* PasswordCriteriaView.swift in Sources */,
+				A14A4DF92BC2D40900E13662 /* PasswordStatusView.swift in Sources */,
 				A18100C62BC1B97B0043DE07 /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
