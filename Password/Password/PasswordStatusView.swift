@@ -18,6 +18,8 @@ class PasswordStatusView : UIView {
     let criteriaViewFour = PasswordCriteriaView(text: "digit (0-9)")
     let criteriaViewFive = PasswordCriteriaView(text: "special character (e.g. !@#$%^)")
     
+    private var shouldResetCriteria : Bool = true
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -46,7 +48,7 @@ extension PasswordStatusView {
         stackView.distribution = .equalCentering
         
         criteriaViewFirst.translatesAutoresizingMaskIntoConstraints = false
-        criteriaViewFirst.isCriteriaMet = false
+//        criteriaViewFirst.isCriteriaMet = false
         criteriaLabel.translatesAutoresizingMaskIntoConstraints = false
         criteriaLabel.font = .preferredFont(forTextStyle: .subheadline)
         criteriaLabel.textColor = .secondaryLabel
@@ -57,13 +59,13 @@ extension PasswordStatusView {
         criteriaLabel.attributedText = makeCriteriaMessage()
         
         criteriaViewSecond.translatesAutoresizingMaskIntoConstraints = false
-        criteriaViewSecond.isCriteriaMet = true
+//        criteriaViewSecond.isCriteriaMet = true
         criteriaViewThird.translatesAutoresizingMaskIntoConstraints = false
-        criteriaViewThird.isCriteriaMet = false
+//        criteriaViewThird.isCriteriaMet = false
         criteriaViewFour.translatesAutoresizingMaskIntoConstraints = false
-        criteriaViewFour.isCriteriaMet = false
+//        criteriaViewFour.isCriteriaMet = false
         criteriaViewFive.translatesAutoresizingMaskIntoConstraints = false
-        criteriaViewFive.isCriteriaMet = true
+//        criteriaViewFive.isCriteriaMet = true
     }
     
     func layout() {
@@ -103,4 +105,39 @@ extension PasswordStatusView {
         return attrText
     }
     
+}
+
+//MARK: actions
+
+extension PasswordStatusView {
+    func updateDisplay(_ text: String) {
+        let lengthAndNoSpaceMet = PasswordCriteria.lengthAndNoSpaceMet(text)
+        let uppercaseMet = PasswordCriteria.uppercaseMet(text)
+        let lowercaseMet = PasswordCriteria.lowercaseMet(text)
+        let digitMet = PasswordCriteria.digitMet(text)
+        let specialCharacterMet = PasswordCriteria.specialCharacterMet(text)
+        
+        
+        if shouldResetCriteria {
+            lengthAndNoSpaceMet
+            ? criteriaViewFirst.isCriteriaMet = true
+            : criteriaViewFirst.reset()
+            
+            uppercaseMet
+            ? criteriaViewSecond.isCriteriaMet = true
+            : criteriaViewSecond.reset()
+            
+            lowercaseMet
+            ? criteriaViewThird.isCriteriaMet = true
+            : criteriaViewThird.reset()
+            
+            digitMet
+            ? criteriaViewFour.isCriteriaMet = true
+            : criteriaViewFour.reset()
+            
+            specialCharacterMet
+            ? criteriaViewFive.isCriteriaMet = true
+            : criteriaViewFive.reset()
+        }
+    }
 }

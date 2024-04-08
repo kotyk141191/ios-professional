@@ -7,31 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A14A4DF52BC2C9A200E13662 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */; };
-		A14A4DF92BC2D40900E13662 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */; };
-		A18100B12BC1B68A0043DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18100B02BC1B68A0043DE07 /* AppDelegate.swift */; };
-		A18100B52BC1B68A0043DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18100B42BC1B68A0043DE07 /* ViewController.swift */; };
-		A18100BA2BC1B68B0043DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18100B92BC1B68B0043DE07 /* Assets.xcassets */; };
-		A18100BD2BC1B68B0043DE07 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A18100BC2BC1B68B0043DE07 /* Base */; };
-		A18100C62BC1B97B0043DE07 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18100C52BC1B97B0043DE07 /* PasswordTextField.swift */; };
-		A1AACB1B2BC3D9AE00E6345D /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AACB1A2BC3D9AE00E6345D /* PasswordCriteria.swift */; };
+		A1AACB072BC3C7F700E6345D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AACB062BC3C7F700E6345D /* AppDelegate.swift */; };
+		A1AACB0B2BC3C7F700E6345D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AACB0A2BC3C7F700E6345D /* ViewController.swift */; };
+		A1AACB102BC3C7F800E6345D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AACB0F2BC3C7F800E6345D /* Assets.xcassets */; };
+		A1AACB132BC3C7F800E6345D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A1AACB122BC3C7F800E6345D /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
-		A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
-		A18100AD2BC1B68A0043DE07 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A18100B02BC1B68A0043DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A18100B42BC1B68A0043DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A18100B92BC1B68B0043DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A18100BC2BC1B68B0043DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A18100BE2BC1B68B0043DE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A18100C52BC1B97B0043DE07 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
-		A1AACB1A2BC3D9AE00E6345D /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
+		A1AACB032BC3C7F700E6345D /* InlineTextFieldActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InlineTextFieldActions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AACB062BC3C7F700E6345D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1AACB0A2BC3C7F700E6345D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1AACB0F2BC3C7F800E6345D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1AACB122BC3C7F800E6345D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1AACB142BC3C7F800E6345D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A18100AA2BC1B68A0043DE07 /* Frameworks */ = {
+		A1AACB002BC3C7F700E6345D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,90 +33,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A14A4DF32BC2C96E00E13662 /* PasswordStatusView */ = {
+		A1AACAFA2BC3C7F700E6345D = {
 			isa = PBXGroup;
 			children = (
-				A14A4DF42BC2C9A200E13662 /* PasswordCriteriaView.swift */,
-				A14A4DF82BC2D40900E13662 /* PasswordStatusView.swift */,
-				A1AACB1A2BC3D9AE00E6345D /* PasswordCriteria.swift */,
-			);
-			name = PasswordStatusView;
-			sourceTree = "<group>";
-		};
-		A18100A42BC1B68A0043DE07 = {
-			isa = PBXGroup;
-			children = (
-				A18100AF2BC1B68A0043DE07 /* Password */,
-				A18100AE2BC1B68A0043DE07 /* Products */,
+				A1AACB052BC3C7F700E6345D /* InlineTextFieldActions */,
+				A1AACB042BC3C7F700E6345D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A18100AE2BC1B68A0043DE07 /* Products */ = {
+		A1AACB042BC3C7F700E6345D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A18100AD2BC1B68A0043DE07 /* Password.app */,
+				A1AACB032BC3C7F700E6345D /* InlineTextFieldActions.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A18100AF2BC1B68A0043DE07 /* Password */ = {
+		A1AACB052BC3C7F700E6345D /* InlineTextFieldActions */ = {
 			isa = PBXGroup;
 			children = (
-				A18100C42BC1B6D60043DE07 /* Files */,
-				A18100B02BC1B68A0043DE07 /* AppDelegate.swift */,
-				A18100B42BC1B68A0043DE07 /* ViewController.swift */,
-				A18100C52BC1B97B0043DE07 /* PasswordTextField.swift */,
-				A14A4DF32BC2C96E00E13662 /* PasswordStatusView */,
+				A1AACB062BC3C7F700E6345D /* AppDelegate.swift */,
+				A1AACB0A2BC3C7F700E6345D /* ViewController.swift */,
+				A1AACB0F2BC3C7F800E6345D /* Assets.xcassets */,
+				A1AACB112BC3C7F800E6345D /* LaunchScreen.storyboard */,
+				A1AACB142BC3C7F800E6345D /* Info.plist */,
 			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		A18100C42BC1B6D60043DE07 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				A18100B92BC1B68B0043DE07 /* Assets.xcassets */,
-				A18100BB2BC1B68B0043DE07 /* LaunchScreen.storyboard */,
-				A18100BE2BC1B68B0043DE07 /* Info.plist */,
-			);
-			name = Files;
+			path = InlineTextFieldActions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A18100AC2BC1B68A0043DE07 /* Password */ = {
+		A1AACB022BC3C7F700E6345D /* InlineTextFieldActions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A18100C12BC1B68B0043DE07 /* Build configuration list for PBXNativeTarget "Password" */;
+			buildConfigurationList = A1AACB172BC3C7F800E6345D /* Build configuration list for PBXNativeTarget "InlineTextFieldActions" */;
 			buildPhases = (
-				A18100A92BC1B68A0043DE07 /* Sources */,
-				A18100AA2BC1B68A0043DE07 /* Frameworks */,
-				A18100AB2BC1B68A0043DE07 /* Resources */,
+				A1AACAFF2BC3C7F700E6345D /* Sources */,
+				A1AACB002BC3C7F700E6345D /* Frameworks */,
+				A1AACB012BC3C7F700E6345D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Password;
-			productName = Password;
-			productReference = A18100AD2BC1B68A0043DE07 /* Password.app */;
+			name = InlineTextFieldActions;
+			productName = InlineTextFieldActions;
+			productReference = A1AACB032BC3C7F700E6345D /* InlineTextFieldActions.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A18100A52BC1B68A0043DE07 /* Project object */ = {
+		A1AACAFB2BC3C7F700E6345D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					A18100AC2BC1B68A0043DE07 = {
+					A1AACB022BC3C7F700E6345D = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = A18100A82BC1B68A0043DE07 /* Build configuration list for PBXProject "Password" */;
+			buildConfigurationList = A1AACAFE2BC3C7F700E6345D /* Build configuration list for PBXProject "InlineTextFieldActions" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,49 +104,45 @@
 				en,
 				Base,
 			);
-			mainGroup = A18100A42BC1B68A0043DE07;
-			productRefGroup = A18100AE2BC1B68A0043DE07 /* Products */;
+			mainGroup = A1AACAFA2BC3C7F700E6345D;
+			productRefGroup = A1AACB042BC3C7F700E6345D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A18100AC2BC1B68A0043DE07 /* Password */,
+				A1AACB022BC3C7F700E6345D /* InlineTextFieldActions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A18100AB2BC1B68A0043DE07 /* Resources */ = {
+		A1AACB012BC3C7F700E6345D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18100BA2BC1B68B0043DE07 /* Assets.xcassets in Resources */,
-				A18100BD2BC1B68B0043DE07 /* Base in Resources */,
+				A1AACB102BC3C7F800E6345D /* Assets.xcassets in Resources */,
+				A1AACB132BC3C7F800E6345D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A18100A92BC1B68A0043DE07 /* Sources */ = {
+		A1AACAFF2BC3C7F700E6345D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18100B52BC1B68A0043DE07 /* ViewController.swift in Sources */,
-				A1AACB1B2BC3D9AE00E6345D /* PasswordCriteria.swift in Sources */,
-				A18100B12BC1B68A0043DE07 /* AppDelegate.swift in Sources */,
-				A14A4DF52BC2C9A200E13662 /* PasswordCriteriaView.swift in Sources */,
-				A14A4DF92BC2D40900E13662 /* PasswordStatusView.swift in Sources */,
-				A18100C62BC1B97B0043DE07 /* PasswordTextField.swift in Sources */,
+				A1AACB0B2BC3C7F700E6345D /* ViewController.swift in Sources */,
+				A1AACB072BC3C7F700E6345D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A18100BB2BC1B68B0043DE07 /* LaunchScreen.storyboard */ = {
+		A1AACB112BC3C7F800E6345D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A18100BC2BC1B68B0043DE07 /* Base */,
+				A1AACB122BC3C7F800E6345D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +150,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A18100BF2BC1B68B0043DE07 /* Debug */ = {
+		A1AACB152BC3C7F800E6345D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		A18100C02BC1B68B0043DE07 /* Release */ = {
+		A1AACB162BC3C7F800E6345D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +269,7 @@
 			};
 			name = Release;
 		};
-		A18100C22BC1B68B0043DE07 /* Debug */ = {
+		A1AACB182BC3C7F800E6345D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,7 +278,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5RR382V6CX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = InlineTextFieldActions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -321,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aiApp.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiApp.InlineTextFieldActions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		A18100C32BC1B68B0043DE07 /* Release */ = {
+		A1AACB192BC3C7F800E6345D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -338,7 +306,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5RR382V6CX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = InlineTextFieldActions/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -349,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aiApp.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiApp.InlineTextFieldActions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,25 +328,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A18100A82BC1B68A0043DE07 /* Build configuration list for PBXProject "Password" */ = {
+		A1AACAFE2BC3C7F700E6345D /* Build configuration list for PBXProject "InlineTextFieldActions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A18100BF2BC1B68B0043DE07 /* Debug */,
-				A18100C02BC1B68B0043DE07 /* Release */,
+				A1AACB152BC3C7F800E6345D /* Debug */,
+				A1AACB162BC3C7F800E6345D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A18100C12BC1B68B0043DE07 /* Build configuration list for PBXNativeTarget "Password" */ = {
+		A1AACB172BC3C7F800E6345D /* Build configuration list for PBXNativeTarget "InlineTextFieldActions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A18100C22BC1B68B0043DE07 /* Debug */,
-				A18100C32BC1B68B0043DE07 /* Release */,
+				A1AACB182BC3C7F800E6345D /* Debug */,
+				A1AACB192BC3C7F800E6345D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A18100A52BC1B68A0043DE07 /* Project object */;
+	rootObject = A1AACAFB2BC3C7F700E6345D /* Project object */;
 }
