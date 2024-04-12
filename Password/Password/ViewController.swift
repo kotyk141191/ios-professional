@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     let statusView = PasswordStatusView()
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Confirm Password")
     let resetButton = UIButton(type: .system)
+    var alert: UIAlertController? // acces to testing
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -168,10 +169,6 @@ extension ViewController {
                      let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
                      let currentTextField = UIResponder.currentFirst() as? UITextField else { return }
 
-//               print("foo - userInfo: \(userInfo)")
-               print("foo - keyboardFrame: \(keyboardFrame)")
-//               print("foo - currentTextField: \(currentTextField)")
-        
         let keyboardTopY = keyboardFrame.cgRectValue.origin.y
         
         let convertedTextFieldFrame = view.convert(currentTextField.frame, from: currentTextField.superview)
@@ -179,14 +176,11 @@ extension ViewController {
         let textFieldBottomY = convertedTextFieldFrame.origin.y + convertedTextFieldFrame.size.height
         
         if textFieldBottomY > keyboardTopY {
-            print("DEBUG: adjust view")
             let textBoxY = convertedTextFieldFrame.origin.y
             let newFrameY = (textBoxY - keyboardTopY/2) * -1
             view.frame.origin.y = newFrameY
         }
-        
-        print("foo - currentTextFieldFrame  \(currentTextField.frame)")
-        print("foo - convertedTextFieldFrame  \(convertedTextFieldFrame)")
+
 
         
     }
@@ -211,11 +205,28 @@ extension ViewController {
        }
 
        private func showAlert(title: String, message: String) {
-           let alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
+           alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
+           guard let alert = alert else {return}
            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 
            alert.title = title
            alert.message = message
            present(alert, animated: true, completion: nil)
        }
+}
+
+
+//MARK: tests
+
+extension ViewController {
+    var newPasswordText : String?  {
+        get { return newPasswordTextField.text}
+        set { newPasswordTextField.text = newValue}
+    }
+    
+    var confirmPasswordText : String?  {
+        get { return confirmPasswordTextField.text}
+        set { confirmPasswordTextField.text = newValue}
+    }
+    
 }
